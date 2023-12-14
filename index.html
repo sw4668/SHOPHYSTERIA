@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satirical Fashion Retail Site</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+<!-- scrolling banner container -->
+<div class="scrolling-banner">
+    <p class="shadow">☆  Free shipping on orders over 400 points   ☆   Spend 200 points to get a FREE tote bag   ☆   Subscribe to our newsletter for 10% off   ☆   Free shipping on orders over 400 points   ☆   Spend 200 points to get a FREE tote bag   ☆   Subscribe to our newsletter for 10% off   ☆   Free shipping on orders over 400 points   ☆   Spend 200 points to get a FREE tote bag   ☆   Subscribe to our newsletter for 10% off   </p>
+  </div>
+</header>
+
+<!-- second meanu header -->
+<header class="menu">
+    <h1 onclick="window.location.reload();">WWW.SHOPHYSTERIA.COM</h1>
+    <nav>
+        <ul>
+            <li><a href="#accessdenied">NEW IN</a></li>
+            <li><a href="#accessdenied">BESTSELLERS</a></li>
+            <li><a href="#accessdenied">SHOP INSTAGRAM</a></li>
+            <li><a href="#accessdenied">OUT OF TREND/ CLEARANCE</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<div id="termsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Welcome to HYSTERIA</h2>
+        <form id="termsForm">
+            <!-- Term 1 -->
+    <label>
+        <input type="checkbox" class="term-checkbox">
+        <b>Fashion FOMO: </b> You acknowledge that the fear of missing out (FOMO) is real, potent, and potentially <i>wallet-draining. </i> Our site leverages this FOMO to ensure you're always on the cutting (or fraying) edge of fashion.
+    </label>
+
+    <!-- Term 2 -->
+    <label>
+        <input type="checkbox" class="term-checkbox">
+        <b>Trend Transience: </b>You understand that today's trend is tomorrow's trivia. Anything you purchase may—and likely will—be deemed <i>unfashionable</i> by the time it reaches your doorstep. We hold no liability for the speed of trend turnover.
+    </label>
+
+    <!-- Term 3 -->
+    <label>
+        <input type="checkbox" class="term-checkbox">
+       <b> Influencer Influx:</b> Recognizing the power of social media influencers, we may employ their persuasive prowess to entice your purchases. Their lifestyles, digitally enhanced to an enviable sheen, are not representative of average consumer realities.
+    </label>
+
+    <!-- Term 4 -->
+        <label>
+            <input type="checkbox" class="term-checkbox">
+            <b>Algorithmic Allure: </b>Our site uses sophisticated algorithms to suggest items you don't need but will <i>desperately</i> want. Your browsing history, social media likes, and the color of your aura (kidding... maybe) feed into this algorithm.
+        </label>
+
+            <!-- Term 5 -->
+    <label>
+        <input type="checkbox" class="term-checkbox">
+        <b>Data Deluge:</b> By using this site, you consent to the collection, use, and sale of your personal data to shadowy figures and data brokers who may or may not use it to take over the world (of advertising).
+    </label>
+
+        <!-- Term 6 -->
+        <label>
+            <input type="checkbox" class="term-checkbox">
+            <b>Eco-Ironic Packaging:</b> We're committed to sustainability - in our press releases, at least. Your orders may arrive swathed in enough plastic to mummify a small car, but rest assured, we're 'thinking' about the environment.
+        </label>
+
+            <!-- Term 7 -->
+    <label>
+        <input type="checkbox" class="term-checkbox">
+        <b>Style Over Substance:</b> Remember, the substance of our products may not withstand the sands of time, but their style... actually, that won't last either. But you'll look good for a moment, and isn't that what counts?
+    </label>
+
+        <!-- Term 8 -->
+        <label>
+            <input type="checkbox" class="term-checkbox">
+            <b>Return Policy Mirage:</b> Our return policy is as elusive as the latest trend. You may try to return items, but in a twist of fate, you'll find it's last season's process, and we've moved on.
+        </label>
+    <!-- Add more terms as needed... -->
+
+            <button type="button" id="agreeButton">I Agree</button>
+        </form>
+    </div>
+</div>
+
+<section class="new-section">
+    <div class="containera">
+        <div class="align">
+        <h1>SHOP HYSTERIA HOLIDAY SALE</h1>
+        <p>UP TO</p>
+        <h2>90% OFF</h2>
+        <div class="girls-image">
+            <img src="images/girls.jpg">
+        </div>
+        <div class="tiktok">
+            <img id="tiktokImage" src="images/tiktok.png">
+        </div>
+        <!-- <div class="bella">
+        <iframe src="https://giphy.com/embed/3otPoN6moBROgS05PO" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ufc-shocked-fans-3otPoN6moBROgS05PO"></a></p>
+        </div>   -->
+
+        <!-- spinning wheel -->
+        <div id="spin-wheel-container">
+            <div id="spin-wheel-heading">
+                <h2>BUY NOW!</h2>
+            </div>
+            <canvas id="spin-wheel" width="300" height="300"></canvas>
+            <button id="spin-button">Spin to Win Influence Points!</button>
+            <div id="points-section">
+                <h3>Total Influence Points: <span id="total-points">0</span></h3>
+            </div>
+        </div>
+<!--              -->
+        <!-- <div class="buybuy">
+            <iframe src="https://giphy.com/embed/uFyxi4tV0NF7AKvysO" width="180" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jagyasini-singh-uFyxi4tV0NF7AKvysO"></a></p>
+        </div> -->
+    </div>
+        <!-- More content as needed -->
+    </div>
+</section>
+
+<section id="trend-of-the-minute">
+    <h2>Trend of the Second!</h2>
+    <h1 id="trend-text">Loading trend...</h1>
+    <p>1-800-SHOP-NOW</p>
+  </section>
+
+  <section id="shoe">
+
+    <img id="shoes" src="images/shoess.png">
+
+    <!-- CHATBOT -->
+
+    <div id="quiz-container">
+        <h2>Take the quiz to find your core!</h2>
+        <p>Question 1: What is your favorite color?</p>
+        <input type="radio" name="quiz" value="a" id="a">
+        <label for="a">blue</label><br>
+        <input type="radio" name="quiz" value="b" id="b">
+        <label for="b">green</label><br>
+        <input type="radio" name="quiz" value="c" id="c">
+        <label for="c">pink</label><br>
+    
+        <p>Question 2: Pick One.</p>
+        <input type="radio" name="quiz" value="d" id="d">
+        <label for="d">Platform Uggs</label><br>
+        <input type="radio" name="quiz" value="e" id="e">
+        <label for="e">Adidas Sambas</label><br>
+        <input type="radio" name="quiz" value="f" id="f">
+        <label for="f">Onitsuka Tigers</label><br>
+
+        <p>Question 3: Favorite way to accessorize?</p>
+        <input type="radio" name="quiz" value="g" id="g">
+        <label for="g">lots of rings</label><br>
+        <input type="radio" name="quiz" value="h" id="h">
+        <label for="h">ribbons. ribbons. ribbons.</label><br>
+        <input type="radio" name="quiz" value="i" id="i">
+        <label for="i">bayonette glasses</label><br>
+        <input type="radio" name="quiz" value="s" id="s">
+        <label for="s">i like to keep it simple.</label><br>
+
+        <p>Question 4: Captialism will be the end of our society and social media is ruining lives... Whats your favorite animal?</p>
+        <input type="radio" name="quiz" value="j" id="j">
+        <label for="j">Dog</label><br>
+        <input type="radio" name="quiz" value="k" id="k">
+        <label for="k">Cat</label><br>
+        <!-- <input type="radio" name="quiz" value="l" id="l">
+        <label for="l">Bird</label><br> -->
+
+        <p>Question 5: Go to lazy day outfit?</p>
+        <input type="radio" name="quiz" value="m" id="m">
+        <label for="m">All black everything</label><br>
+        <input type="radio" name="quiz" value="n" id="n">
+        <label for="n">Matching sweat set </label><br>
+        <input type="radio" name="quiz" value="o" id="o">
+        <label for="o">Jeans and a t-shirt... 90s chic!</label><br>
+    
+        <p>Question 6: Choose one.</p>
+        <input type="radio" name="quiz" value="p" id="p">
+        <label for="p">Bella Hadid</label><br>
+        <input type="radio" name="quiz" value="q" id="q">
+        <label for="q">Avril Lavigne</label><br>
+        <input type="radio" name="quiz" value="r" id="r">
+        <label for="r">Nicole Kidman</label><br>
+
+    
+
+        <button id="quiz-submit">Submit</button>
+        <p id="quiz-response"></p>
+    </div>
+
+
+
+
+
+
+    <!-- <div id="spin-wheel-container">
+        <div id="spin-wheel-heading">
+            <h2>PUT! IT!    ON!</h2>
+        </div>
+        <canvas id="spin-wheel" width="300" height="300"></canvas>
+        <button id="spin-button">Spin to Win Influence Points!</button>
+        <div id="points-section">
+            <h3>Total Influence Points: <span id="total-points">0</span></h3>
+        </div>
+    </div> -->
+
+    <!-- Place this section where you want to display the points -->
+  
+    
+  </section>
+
+ 
+  
+
+<main>
+    <section class="aesthetic-list">
+        <!-- <div class="modelss">
+
+            <img src="images/amodel.jpg" alt="amodel">
+            <img src="images/bmodel.jpg" alt="bmodel">
+            <img src="images/cmodel.jpg" alt="cmodel">
+        </div> -->
+        <!-- Repeat this block for each category -->
+        <!-- <div class="container">
+            <div class="links-grid">
+             List of styles within the category -->
+            <!-- <a href="#link1">Cottagecore</a>
+            <a href="#link2">Clean Girl Aesthetic</a>
+            <a href="#link3">Dark Academia</a>
+            <a href="#link4">Y2k Fashion</a>
+            <a href="#link5">Harajuku</a>
+            <a href="#link6">Minimalist Style</a>
+            <a href="#link7">Normcore</a>
+            <a href="#link8">Skater Style</a>
+            <a href="#link9">Old Money Aesthetic</a>
+            <a href="#link10">Witchcore</a>
+            <a href="#link11">Korean Fashion</a>
+            <a href="#link12">Gothic Lolita</a>
+            <a href="#link13">Kawaii Grunge</a>
+            <a href="#link14">Nerdy Chic</a>
+            <a href="#link15">Clowncore</a>
+            <a href="#link16">Cyberpunk Style</a>
+            <a href="#link17">Coquette</a>
+            <a href="#link18">Vaporwave Aesthetic</a>
+            <a href="#link19">Indie Sleeze</a>
+            <a href="#link20">Equestrian Style</a>
+            <a href="#link21">Balletcore</a>
+            <a href="#link22">Fairycore</a>
+            <a href="#link23">Grunge</a>
+            <a href="#link24">Sandy Liang Aesthetic</a>
+            <a href="#link25">Douyin Look</a>
+            <a href="#link26">Copenhagen Style</a>
+            <a href="#link27">Anglecore</a>
+            <a href="#link28">Lobotomy Chic</a>
+            <a href="#link29">Soft Girl Aesthetic</a>
+            <a href="#link30">Blokecore</a>
+            <a href="#link31">Kidcore</a>
+            <a href="#link32">Gyaru</a>
+            <a href="#link33">Pastel Punk</a>
+            <a href="#link34">Queer Academia</a>
+            <a href="#link35">Dadcore</a>
+            <a href="#link36">Coastal Grandma</a>
+            <a href="#link37">Weird Girl Aesthetic</a>
+            <a href="#link38">70's Disco Glam</a>
+            <a href="#link39">Plazacore</a>
+            <a href="#link40">90's Whimsigoth</a>
+            <a href="#link41">Gorpcore</a>
+            <a href="#link42">Regencycore</a>
+            <a href="#link43">Coastal Cowgirl</a>
+            <a href="#link44">Goblincore</a>
+            <a href="#link45">Vacationcore</a>
+            <a href="#link46">Miu Miu Girl</a>
+            <a href="#link47">ABG Style</a>
+            <a href="#link48">Corporate Grunge</a>
+            <a href="#link49">Femcel</a>
+            <a href="#link50">Visco Preppy</a>
+            <a href="#link51">Techwear</a>
+            <a href="#link52">Bella Hadid Style</a>
+            <a href="#link53">Barbiecore</a>
+            <a href="#link54">Whimsigoth</a> -->
+                <!-- More items -->
+            <!-- </div>
+        </div>  -->
+    </section>
+
+    <!-- Popup -->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <div class="popup-image">
+                <img src="images/popup.png" alt="Popup Image">
+              </div>
+            <div class="popup-content">
+          <span class="close-btn" id="close-btn">&times;</span>
+          <h2>JOIN US</h2>
+          <p>For exclusive offers, VIP early access, and 10% OFF your next order...</p>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Address">
+          <input type="number" placeholder="Social Security Number">
+          <button>SUBSCRIBE NOW</button>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <section class="photo-gallery">
+        <!-- Photo item 1 -->
+        <div class="photo-item">
+            <a href="#accessdenied"> <img src="images/amodel.jpg" alt="amodel">
+            <p>Skatercore T-Shirt Set  3000 points</p> </a>
+            <img class="bubblea" src="images/bubble.png" >
+        </div>
+    
+        <!-- Photo item 2 -->
+        <div class="photo-item">
+            <a href="#accessdenied"> <img src="images/bmodel.jpg" alt="bmodel">
+            <p>Chuck Taylor All Star Move Platform Sneakers   700000 points</p> </a>
+        </div>
+    
+        <!-- Photo item 3 -->
+        <div class="photo-item">
+            <a href="#accessdenied"> <img src="images/cmodel.jpg" alt="cmodel">
+            <p>Bikercore Oversized Bomber Jacket  3999 points</p> </a>
+        </div>
+        <!-- ... other photos ... -->
+
+        <div class="photo-item">
+            <a href="#accessdenied"> <img src="images/dmodel.jpg" alt="dmodel">
+            <p>Old Money Dark Academia Bundle   99999 points</p> </a>
+        </div>
+
+    </section>
+    
+</main>
+
+<footer>
+    <p>www.shophysteria.com</p>
+</footer>
+
+</body>
+</html>
